@@ -1,0 +1,28 @@
+{
+  "name": "cypress_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "cy_open": "npx cypress open --e2e --browser chrome",
+    "cy_run": "npx cypress run --e2e --spec 'cypress/e2e/ui/**/*' --browser chrome --headless",
+    "cy_open_api": "npx cypress open --e2e --browser chrome --expose grepTags=@api",
+    "cy_run_api": "npx cypress run --e2e --spec 'cypress/e2e/api/**/*' --browser chrome --headless",
+    "current": "npx cypress run --e2e --browser chrome --expose grepTags=@current"
+  },
+  "devDependencies": {
+    "@bahmutov/cy-grep": "^3.0.4",
+    "@faker-js/faker": "^10.4.0",
+    "cypress": "^15.15.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.2",
+    "cypress-plugin-steps": "^1.2.1",
+    "dotenv": "^17.4.2",
+    "moment": "^2.30.1"
+  }
+}

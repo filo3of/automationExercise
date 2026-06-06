@@ -1,0 +1,10 @@
+node_modules
+.env
+user.json
+cypress.demo.json
+cypress/fixtures/tmp
+cypress/downloads
+test-reports/
+cypress/reports
+cypress/videos
+cypress/screenshots
